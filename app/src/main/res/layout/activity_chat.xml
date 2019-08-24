@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    tools:context=".PassengerPages.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/green"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--Receiver profile picture design -->
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default"
+            app:civ_circle_background_color="@color/green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp">
+
+            <!--Receiver name -->
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receiver Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Receiver Status / online or offline -->
+
+            <TextView
+                android:id="@+id/userStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="online"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!-- RecyclerView -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/chatLayout" />
+
+        <!-- Send message edit text and button in layout -->
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <!-- User input message -->
+            <EditText
+                android:id="@+id/messageEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine"
+                android:background="@null"
+                android:hint="Type your message here..."
+                android:padding="15dp"/>
+
+            <!--send message -->
+            <ImageButton
+                android:id="@+id/sendBtn"
+                android:background="@null"
+                android:src="@drawable/ic_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

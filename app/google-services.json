@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "323916724335",
+    "firebase_url": "https://go-rider-24773.firebaseio.com",
+    "project_id": "go-rider-24773",
+    "storage_bucket": "go-rider-24773.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323916724335:android:7738fe742be9f442",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323916724335-fab50bo8qachutcpk7aq6bbcnlsj16k9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "a9a31fafd12784348e19867e9951b016ec41207b"
+          }
+        },
+        {
+          "client_id": "323916724335-0uah3be06300sf63fr1dmnvo2o9fgu06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login",
+            "certificate_hash": "fd28fe7e20ec147f92482edf4025e5cb88dd9ba8"
+          }
+        },
+        {
+          "client_id": "323916724335-hvmd090ns782ej90t9rnc9m89ciu9btv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVL89QAiFQfEbo1OFSY6VKWrSMQwRBX6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323916724335-hvmd090ns782ej90t9rnc9m89ciu9btv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

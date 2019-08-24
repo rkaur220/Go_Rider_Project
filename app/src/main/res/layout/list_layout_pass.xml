@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/uPictureIv"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewDateTimeStamp"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Title"
+            android:autoLink="all"/>
+        <TextView
+            android:id="@+id/textViewTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Title"
+            android:autoLink="all"/>
+        <TextView
+            android:id="@+id/textViewDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="The Description of the post"
+            android:autoLink="all"/>
+        <TextView
+            android:id="@+id/textViewBagDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Bag Details"
+            android:autoLink="all"/>
+
+        <TextView
+            android:id="@+id/textViewPrice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="$"
+            android:autoLink="all"/>
+        <TextView
+            android:id="@+id/textViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="The Description of the post"
+            android:autoLink="all"/>
+        <ImageView
+            android:id="@+id/textViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bookSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_seat"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_seat"
+                android:background="#FFFFFF"/>
+
+
+
+        </LinearLayout> -->
+
+
+        <!--  <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="#F5F0F0" />
+
+         <LinearLayout
+             android:id="@+id/profileLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center">
+
+            <Button
+                 android:id="@+id/commentBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="CHAT"
+                 android:onClick="chatPage"
+                 android:drawableLeft="@drawable/ic_comment_black"
+                 android:drawablePadding="5dp"
+                 android:drawableStart="@drawable/ic_comment_black"
+                 android:background="#FFFFFF"/>
+             <Button
+                 android:id="@+id/shareBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="SHARE"
+                 android:drawableLeft="@drawable/ic_share_black"
+                 android:drawablePadding="5dp"
+                 android:drawableStart="@drawable/ic_share_black"
+                 android:background="#FFFFFF"/>
+
+
+        </LinearLayout> -->
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

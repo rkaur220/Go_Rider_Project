@@ -1,0 +1,40 @@
+<resources>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--For chat activity -->
+    <style name="AppThemeNo" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MenuStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+</resources>

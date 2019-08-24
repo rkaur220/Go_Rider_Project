@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverPages.AddPostActivity"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:text="Add My Trip"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnerFromCity"
+            android:layout_width="330dp"
+            android:pointerIcon="arrow"
+            android:entries="@array/genres"
+            android:layout_height="38dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:background="#DCDCDC"
+            android:popupBackground="#DCDCDC"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/spinnerFromCity"
+                android:layout_alignLeft="@+id/spinnerFromCity"
+                android:layout_alignRight="@+id/spinnerFromCity"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/ic_drop_down"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/to"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="170dp"
+            android:background="#DCDCDC"
+            android:entries="@array/to"
+            android:popupBackground="#DCDCDC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/to"
+                android:layout_alignLeft="@+id/to"
+                android:layout_alignRight="@+id/to"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/ic_drop_down"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/allowedBags"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="240dp"
+            android:background="#DCDCDC"
+            android:entries="@array/allowedBags"
+            android:popupBackground="#DCDCDC"
+            android:spinnerMode="dropdown"
+            tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/allowedBags"
+                android:layout_alignLeft="@+id/allowedBags"
+                android:layout_alignRight="@+id/allowedBags"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/ic_drop_down"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/price"
+            android:layout_width="130dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:background="#DCDCDC"
+            android:entries="@array/priceType"
+            android:popupBackground="#DCDCDC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/price"
+                android:layout_alignLeft="@+id/price"
+                android:layout_alignRight="@+id/price"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="320dp"
+                android:background="@drawable/ic_drop_down"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/tripPrice"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="310dp"
+            android:hint="Please enter amount"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="100dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="380dp"
+            android:text="Choose Date/Time"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="400dp"
+            android:hint="01/01/2000"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="400dp"
+            android:hint="12:30"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/seats"
+                android:layout_width="130dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="460dp"
+                android:background="#DCDCDC"
+                android:entries="@array/seats"
+                android:popupBackground="#DCDCDC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/seats"
+                android:layout_alignLeft="@+id/seats"
+                android:layout_alignRight="@+id/seats"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="470dp"
+                android:background="@drawable/ic_drop_down"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="739dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="102dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="330dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="530dp"
+            android:ems="10"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Meeting Point/ Description"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="#FFFFFF"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="322dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="739dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="102dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post My Trip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="322dp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverPages.RateAppDriverPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Rate your App"
+        android:layout_marginTop="100dp"
+        android:fontFamily="\"
+        android:textColor="#00A591"
+        android:textSize="30dp"
+        app:fontFamily="sans-serif-black" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/smily" />
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="180dp"
+        android:foregroundGravity="center"
+        app:angryColor="#f29a68"
+        app:drawingColor="#353431"
+        app:isIndicator="false"
+        app:normalColor="#f2dd68"
+        app:placeHolderBackgroundColor="#e6e8ed"
+        app:placeHolderSmileColor="#ffffff"
+        app:showLine="true"
+        app:textNonSelectionColor="#AEB3B5"
+        app:textSelectionColor="#000000"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submitRating"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:background="#00A591"
+        android:text="Submit MY Rating"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

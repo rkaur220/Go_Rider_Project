@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_add"
+            android:title="Search Ride" />
+
+        <item
+            android:id="@+id/nav_pass_profile"
+            android:icon="@drawable/ic_edit_profile"
+            android:title="Update Profile" />
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black"
+                android:title="Share the App" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_black"
+                android:title="Rate" />
+        </menu>
+
+    </item>
+
+    <item android:title="Activity">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>
